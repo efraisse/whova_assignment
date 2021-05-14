@@ -4,6 +4,11 @@ import sys
 
 #arg1 = "agenda.xls"
 #loc = (arg1) #through jupyter
+
+sys.path.append(".")
+
+from db_table import db_table
+
 loc = (sys.argv[0]) #through command line arguments
 
 wb = xlrd.open_workbook(loc)
