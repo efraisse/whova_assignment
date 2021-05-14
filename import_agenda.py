@@ -22,7 +22,7 @@ table = db_table("table2", {"date": 'text',
 
 
 index = 15
-while (index < sheet.nrows): #find way to replace 79
+while (index < sheet.nrows):
     table.insert({"date": sheet.cell_value(index, 0),
                   "start_time": sheet.cell_value(index, 1),
                   "end_time": sheet.cell_value(index, 2),
