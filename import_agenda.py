@@ -2,9 +2,9 @@
 import xlrd
 import sys
 
-arg1 = "agenda.xls"
-loc = (arg1) #through jupyter
-#loc = (sys.argv[0]) #through command line arguments
+#arg1 = "agenda.xls"
+#loc = (arg1) #through jupyter
+loc = (sys.argv[0]) #through command line arguments
 
 wb = xlrd.open_workbook(loc)
 sheet = wb.sheet_by_index(0)

@@ -7,8 +7,8 @@ loc = ("agenda.xls")
 wb = xlrd.open_workbook(loc)
 sheet = wb.sheet_by_index(0)
 
-args1, args2 = "speakers", "Shan Lu" #through jupyter
-#args1, args2 = sys.argv[0], sys.argv[1] #through command line arguments
+#args1, args2 = "speakers", "Shan Lu" #through jupyter
+args1, args2 = sys.argv[0], sys.argv[1] #through command line arguments
 
 print(table.select(where = {args1: args2}))
 
