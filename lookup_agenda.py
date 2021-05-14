@@ -7,7 +7,7 @@ loc = ("agenda.xls")
 sys.path.append(".")
 
 from db_table import db_table
-from import_agenda
+import import_agenda
 
 wb = xlrd.open_workbook(loc)
 sheet = wb.sheet_by_index(0)
