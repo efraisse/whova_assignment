@@ -1,10 +1,9 @@
 #import_agenda.py
 import xlrd
 import sys
+from db_table import db_table
 
 sys.path.append(".")
-
-from db_table import db_table
 
 loc = (sys.argv[0]) #through command line arguments
 
