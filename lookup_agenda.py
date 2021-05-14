@@ -1,13 +1,12 @@
 #lookup_agenda.py
 import xlrd
 import sys
+from db_table import db_table
+import import_agenda
 
 loc = ("agenda.xls")
 
 sys.path.append(".")
-
-from db_table import db_table
-import import_agenda
 
 wb = xlrd.open_workbook(loc)
 sheet = wb.sheet_by_index(0)
