@@ -7,12 +7,11 @@ loc = ("agenda.xls")
 sys.path.append(".")
 
 from db_table import db_table
-from import_agenda import table
+from import_agenda
 
 wb = xlrd.open_workbook(loc)
 sheet = wb.sheet_by_index(0)
 
-#args1, args2 = "speakers", "Shan Lu" #through jupyter
 args1, args2 = sys.argv[0], sys.argv[1] #through command line arguments
 
 print(table.select(where = {args1: args2}))

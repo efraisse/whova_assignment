@@ -2,9 +2,6 @@
 import xlrd
 import sys
 
-#arg1 = "agenda.xls"
-#loc = (arg1) #through jupyter
-
 sys.path.append(".")
 
 from db_table import db_table
