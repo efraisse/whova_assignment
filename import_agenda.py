@@ -10,7 +10,7 @@ loc = (sys.argv[0]) #through command line arguments
 wb = xlrd.open_workbook(loc)
 sheet = wb.sheet_by_index(0)
 
-table = db_table("table2", {"date": 'text',
+table = db_table("table_events", {"date": 'text',
                            "start_time": 'text',
                           "end_time": 'text',
                           "session_or_sub": 'text',
